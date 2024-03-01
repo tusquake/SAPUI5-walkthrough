@@ -1,0 +1,21 @@
+<mvc:View controllerName="com.app.project2.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <Page id="page" title="I am the first View">
+        <content>
+            <Text id="idTxtMsg" text="Welcome to SAPUI5" class="sapMH3FontSize" textAlign="Center" width="100%"></Text>
+            <Label id="idLbName" text="Enter your name" class="sapUiSmallMargin" required="true" design="Bold"></Label>
+            <Input id="idIpName" width="30%" value="" placeholder="enter name" maxLength="10"></Input>
+            <Label id="idLbAlign" text="Enter Alignment" class="sapUiSmallMargin" required="true" design="Bold"></Label>
+            <Input id="idIpAlign" width="30%" value="" placeholder="enter alignment" maxLength="10"></Input>
+        </content>
+    <footer>
+    <Bar>
+        <contentRight>
+            <Button id="idBtnSub" text="Submit" press="onSubmit" type="Emphasized" />
+        </contentRight>
+    </Bar>
+</footer>
+</Page>
+    
+</mvc:View>
