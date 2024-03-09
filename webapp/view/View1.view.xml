@@ -3,30 +3,29 @@
     xmlns="sap.m">
     <Page id="page" title="I am the first View">
         <content>
-            <FlexBox justifyContent="Center" alignItems="Center" height="50%" width="100%">
-        <VBox>
-                <Panel expandable="true" headerText="Data Entry" height="100%" width="150%">
-                    <HBox>
-                        <Label text="First Name :" class="sapUiTinyMargin" />
-                        <Input value="{oModel>/firstName}" />
-                    </HBox>
-                    <HBox>
-                        <Label text="Last Name :" class="sapUiTinyMargin" />
-                        <Input value="{oModel>/lastName}" />
-                    </HBox>
-                    <HBox>
-                        <Label text="Post :" class="sapUiTinyMargin" />
-                        <Input value="{oModel>/post}" />
-                    </HBox>
-                    <Button text="Success" press="onPressSuccess"/>
-                    <Button text="Error" press="onPressError"/>
-                </Panel>
-            </VBox>
-            </FlexBox>
+            <form:SimpleForm title="Employee Information" editable="true" layout="ResponsiveGridLayout" labelSpanL="3" labelSpanM="3" emptySpanL="0" emptySpanM="0">
+                <form:content>
+                <!-- <core:Title text="Basic Information"></core:Title> -->
+                <Label text="Employee Id" required="true"></Label>
+                <Input id="idIpEmpId"></Input>
+                <Label text="Employee Name" required="true"></Label>
+                <Input id="idIpEmpName" maxLength="20"></Input>
+                <Label text="Employee Designation" required="true"></Label>
+                <Input id="idIpEmpDesig"></Input>
+                <!-- <core:Title text="Contact Information"></core:Title> -->
+                <Label text="Employee Skill" required="true"></Label>
+                <Input id="idIpEmpSkill"></Input>
+                <Label text="Employee Email" required="true"></Label>
+                <Input id="idIpEmpEmail"></Input>
+                <Label text="Employee Phone" required="true"></Label>
+                <Input id="idIpEmpPhone"></Input>
+                </form:content>
+            </form:SimpleForm>
         </content>
     <footer>
     <Bar>
         <contentRight>
+            <Button id="idBtnReg" text="Register" press="onRegister" type="Emphasized" />
             <!-- <Button id="idBtnHideShow" text="Hide" press="onHideShow" type="Emphasized" />
             <Button id="idBtnSub" text="Submit" press="onSubmit" type="Emphasized" /> -->
         </contentRight>
