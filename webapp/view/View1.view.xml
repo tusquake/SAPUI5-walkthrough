@@ -3,16 +3,25 @@
     xmlns="sap.m">
     <Page id="page" title="I am the first View">
         <content>
-            <FlexBox justifyContent="Center" alignItems="Center" height="100%">
-                <VBox >
-                    <Label text="Register" class="sapMH3FontSize" textAlign="Center" width="100%" design="Bold"></Label>
-                    <!-- <Text text="Login" class="sapMH3FontSize" textAlign="Center" width="100%"></Text> -->
-                    <Label text="Username:" design="Bold" class="sapUiMediumMarginTop mytextcolor mytextfont"></Label>
-                    <Input width="400px" id="idIpTxtname" placeholder="Enter your name"></Input>
-                    <Label text="Password:" design="Bold" class="sapUiSmallMarginTop mytextcolor mytextfont"></Label>
-                    <Input width="400px" placeholder="Enter your password" type="Password"></Input>
-                    <Button text="Login" width="400px" type="Emphasized" press="onPress"></Button>
-                </VBox>
+            <FlexBox justifyContent="Center" alignItems="Center" height="50%" width="100%">
+        <VBox>
+                <Panel expandable="true" headerText="Data Entry" height="100%" width="150%">
+                    <HBox>
+                        <Label text="First Name :" class="sapUiTinyMargin" />
+                        <Input value="{oModel>/firstName}" />
+                    </HBox>
+                    <HBox>
+                        <Label text="Last Name :" class="sapUiTinyMargin" />
+                        <Input value="{oModel>/lastName}" />
+                    </HBox>
+                    <HBox>
+                        <Label text="Post :" class="sapUiTinyMargin" />
+                        <Input value="{oModel>/post}" />
+                    </HBox>
+                    <Button text="Success" press="onPressSuccess"/>
+                    <Button text="Error" press="onPressError"/>
+                </Panel>
+            </VBox>
             </FlexBox>
         </content>
     <footer>
