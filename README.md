@@ -1,3 +1,4 @@
-<h2>Day 1 Preview</h2>
+<h2>Day 0 Preview</h2>
 
-![Screenshot (2356)](https://github.com/tusquake/SAPUI5-walkthrough/assets/77339749/3a4c6a60-d07d-4735-a4e2-7df9e63da8c0)
+
+![Screenshot (2358)](https://github.com/tusquake/SAPUI5-walkthrough/assets/77339749/98be9542-4a36-483c-a4dc-ac52eac4f8dd)
