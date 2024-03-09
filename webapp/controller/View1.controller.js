@@ -11,8 +11,9 @@ sap.ui.define([
             onInit: function () {
 
             },
-            onPress: function(){
-                alert("Hello Tussu")
+            onPress :function(){
+                var name = this.getView().byId("idIpTxtname").getValue();
+                alert("Login Succesful✔ "+name);
             },
             onSubmit: function(){
                 var name = this.getView().byId("idIpName").getValue();

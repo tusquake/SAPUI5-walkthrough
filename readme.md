@@ -1,4 +1,4 @@
-<h1>Day 3 Topics</h1>
-<p>1. How to horizontally align elements using HBox<br>2. How to Hide and Show elements on screen</p>
+<h1>Day 4 Topics</h1>
+<p>1. How to use FlexBox<br>2. Make a basic login form and show alert when user click on Login</p>
 
-<h2>Day 3 Preview</h2>
+<h2>Day 4 Preview</h2>
