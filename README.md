@@ -1,5 +1,5 @@
 <h1>Day 0 Topics</h1>
-<p>1.Setup of First Application<br>2.How to show new title and add Text to UI5 Application</p>
+<p>1. Setup of First Application<br>2. How to show new title and add Text to UI5 Application</p>
 
 <h2>Day 0 Preview</h2>
 
