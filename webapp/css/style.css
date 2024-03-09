@@ -1,0 +1,7 @@
+.mybackgroundcolor{
+    /* background-color: green;
+    cursor: pointer; */
+    background-image: url('../images/bg.avif');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
